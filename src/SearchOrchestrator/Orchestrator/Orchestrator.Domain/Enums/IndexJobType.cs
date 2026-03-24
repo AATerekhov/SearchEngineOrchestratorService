@@ -2,6 +2,7 @@
 {
     public enum IndexJobType
     {
-
+        IndexSource,
+        ReindexSource
     }
 }

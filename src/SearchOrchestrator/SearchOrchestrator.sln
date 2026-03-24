@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchestrator.Domain", "Orch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchestrator.Infrastructure", "Orchestrator\Orchestrator.Infrastructure\Orchestrator.Infrastructure.csproj", "{2EA24EE3-4771-41E2-9146-A3F6A490526D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchestrator.Tests", "Orchestrator\Orchestrator.Tests\Orchestrator.Tests.csproj", "{21BEE456-2DB6-42C9-A587-C1FC1391AC90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{2EA24EE3-4771-41E2-9146-A3F6A490526D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EA24EE3-4771-41E2-9146-A3F6A490526D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EA24EE3-4771-41E2-9146-A3F6A490526D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21BEE456-2DB6-42C9-A587-C1FC1391AC90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21BEE456-2DB6-42C9-A587-C1FC1391AC90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21BEE456-2DB6-42C9-A587-C1FC1391AC90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21BEE456-2DB6-42C9-A587-C1FC1391AC90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{E36FF44C-38A6-417D-9588-3D0659A5F2A5} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
 		{64040D4B-8025-42D5-B2E8-8927620666B3} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
 		{2EA24EE3-4771-41E2-9146-A3F6A490526D} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
+		{21BEE456-2DB6-42C9-A587-C1FC1391AC90} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {73F26396-4F03-403B-B0FA-E6716261D634}

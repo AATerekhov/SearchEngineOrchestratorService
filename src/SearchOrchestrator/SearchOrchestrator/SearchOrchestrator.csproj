@@ -9,15 +9,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR" Version="14.1.0" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\Orchestrator\Orchestrator.Application\Orchestrator.Application.csproj" />
+    <ProjectReference Include="..\Orchestrator\Orchestrator.Domain\Orchestrator.Domain.csproj" />
     <ProjectReference Include="..\Orchestrator\Orchestrator.Infrastructure\Orchestrator.Infrastructure.csproj" />
   </ItemGroup>
 
