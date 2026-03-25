@@ -1,4 +1,5 @@
-﻿using static Orchestrator.Application.DTOs.Client.SearchEnginesDto;
+
+using Orchestrator.Application.Abstractions.Contracts;
 
 namespace Orchestrator.Application.Abstractions
 {

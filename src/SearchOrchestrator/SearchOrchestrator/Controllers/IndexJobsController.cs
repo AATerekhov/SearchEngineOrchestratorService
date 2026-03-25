@@ -27,7 +27,7 @@ namespace SearchOrchestrator.Controllers
         }
 
         [HttpPost]
-        [ProducesResponseType(typeof(IndexJobDto), StatusCodes.Status201Created)]
+        [ProducesResponseType(typeof(IndexJobDto), StatusCodes.Status202Accepted)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Create([FromBody] CreateIndexJobRequestDto request, CancellationToken ct)
         {
@@ -36,7 +36,7 @@ namespace SearchOrchestrator.Controllers
                 var command = mapper.Map<CreateIndexJobCommand>(request);
                 var indexJob = await mediator.Send(command, ct);
 
-                return CreatedAtAction(nameof(GetById), new { id = indexJob.Id.Value }, mapper.Map<IndexJobDto>(indexJob));
+                return AcceptedAtAction(nameof(GetById), new { id = indexJob.Id.Value }, mapper.Map<IndexJobDto>(indexJob));
             }
             catch (InvalidOperationException exception)
             {
