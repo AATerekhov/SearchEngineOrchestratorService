@@ -1,5 +1,5 @@
-using Orchestrator.Application.Abstractions;
 using Orchestrator.Application.Abstractions.Contracts;
+using Orchestrator.Application.Abstractions.Services;
 using System.Collections.Concurrent;
 
 namespace Orchestrator.Infrastructure.ExternalSearch

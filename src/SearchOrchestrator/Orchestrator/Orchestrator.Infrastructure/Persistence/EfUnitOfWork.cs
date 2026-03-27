@@ -2,11 +2,11 @@ using Orchestrator.Application.Abstractions;
 
 namespace Orchestrator.Infrastructure.Persistence
 {
-    internal sealed class InMemoryUnitOfWork : IUnitOfWork
+    internal sealed class EfUnitOfWork(OrchestratorDbContext dbContext) : IUnitOfWork
     {
         public Task<int> SaveChangesAsync(CancellationToken ct = default)
         {
-            return Task.FromResult(1);
+            return dbContext.SaveChangesAsync(ct);
         }
     }
 }

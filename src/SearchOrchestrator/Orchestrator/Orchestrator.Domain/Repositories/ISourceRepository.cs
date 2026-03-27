@@ -7,5 +7,6 @@ namespace Orchestrator.Domain.Repositories
     {
         Task AddAsync(Source source, CancellationToken ct = default);
         Task<Source?> GetByIdAsync(SourceId id, CancellationToken ct = default);
+        Task<IReadOnlyDictionary<Guid, Source>> GetByIdAsync(IReadOnlyCollection<Guid> ids, CancellationToken ct = default);
     }
 }

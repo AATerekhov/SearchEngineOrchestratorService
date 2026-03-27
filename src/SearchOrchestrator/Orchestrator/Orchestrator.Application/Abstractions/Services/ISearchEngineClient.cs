@@ -1,7 +1,6 @@
-
 using Orchestrator.Application.Abstractions.Contracts;
 
-namespace Orchestrator.Application.Abstractions
+namespace Orchestrator.Application.Abstractions.Services
 {
     public interface ISearchEngineClient
     {
